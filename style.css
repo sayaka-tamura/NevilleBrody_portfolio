@@ -1,0 +1,274 @@
+/* style sheet for DesignersOfTheWorld.com */
+
+/* HERE IS WHERE YOU DO ALL YOUR DESIGN WORK, AND YOU CAN START BY MODIFYING THE LINES BELOW */
+/*feel free to style any text level element (see on html5doctor.com) such as <i> <em> or <b> or use these approved classes for
+effect (pullQuote or highLight or borderEffect or ShadowDrop or activeSection or activePage) stick to these, because if you use
+a class name or id name that you made up, it will cause the site to malfunction on the other designer pages.  */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Quicksand:400|Londrina+Outline|Alegreya+Sans+SC:400,100,300|Cabin+Sketch:700);
+
+*{
+	margin:0 auto;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-icab-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	width: 1100px;
+}
+
+img,video{width: auto; max-width: 100%; height: auto;}
+
+header {
+	background: #fff;
+	width: 1100px;
+	float: left;
+	margin-top: 1em;
+}
+
+header:after {
+  content: "";
+  display: block;
+  clear: both;
+ }
+
+#logo {
+	background-image: url('brody/images/titleLogo.png');
+	height:200px;
+	background-repeat: no-repeat;
+	float: left;
+		}
+
+h1{
+	font-family: 'Cabin Sketch',cursive;
+	font-size: 2.5em;
+	line-height: 1;
+	}
+
+#logo h1{
+	color:green;
+	margin-left: 3em;
+	background-color: rgba(255,255,255,0.5);
+}
+
+nav {
+	clear: right;
+	float: right;
+	margin-top: -1em;
+}
+
+nav:after {
+  content: "";
+  display: block;
+  clear: both;
+ }
+
+nav ul {
+	list-style-type: none;
+	border: 1px dotted rgb(153, 102, 0);
+	padding: 0;
+}
+
+nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+ }
+
+nav ul li {
+	float: left;
+	padding:10px;
+	color:#3e5d5e;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 1.5em;
+	border-left: 1px dotted rgb(153, 102, 0);
+	line-height: 1;
+}
+
+nav ul li:first-child{
+	border-left: none;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: rgb(153, 102, 0);
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+	color: rgb(153, 102, 0);
+}
+
+nav ul li:hover{
+	background-color: #e9f8f2;
+}
+
+
+
+form {
+	font-family: 'Quicksand',sans-serif;
+	font-size: 1em;
+	float: right;
+	position: relative;
+	top: 4.5em;
+	right: 0.5em;
+}
+
+#navSecondary{
+	width: 1100px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+	clear:both;
+	margin-bottom: 2em;
+}
+
+#navSecondary:after,#navSecondary ul:after {
+  content: "";
+  display: block;
+  clear: both;
+ }
+
+#navSecondary ul{
+	list-style-type: none;
+	padding-left: 10px;
+}
+#navSecondary ul li{
+	float: left;
+	padding: 10px;
+	font-size: 0.9em;
+	transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+}
+
+#navSecondary ul li:hover{
+	font-size: 2em;
+}
+
+#navSecondary ul li a{
+	color: black;
+}
+
+#designerName{
+	clear: both;
+	width: 1100px;
+}
+
+#designerName h1{
+	font-family: 'Londrina Outline',cursive;
+	color: rgb(255, 255, 255);
+	text-align: right;
+	padding: 7px;
+	font-size: 2.2em;
+	background-color: rgb(153, 102, 0);
+	border-radius: 0.25em;
+	}
+
+#thirdNav{
+	margin: 10px 0;
+	float: right;
+}
+
+#thirdNav ul{list-style-type: none;}
+
+#thirdNav ul li:first-child{
+	margin-right: 1em;
+}
+
+#thirdNav ul li{
+	float: left;
+	padding: 5px;
+	background-color: #ccc;
+	border-radius: 0.5em;
+}
+#thirdNav a:link,#thirdNav a:visited,#thirdNav a:active{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 900;
+}
+
+#thirdNav a:hover{
+	color:#333;
+}
+
+main {
+	padding: 0px;
+	width: 1100px;
+	margin-bottom: 2em;
+	float: left;
+	display: block;
+	-moz-columns: 250px 3;
+	-webkit-columns: 250px 3;
+	-o-columns: 250px 3;
+	-ms-columns: 250px 3;
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em;
+	-o-column-gap: 1em;
+	-ms-column-gap: 1em;
+}
+
+main h2{
+	font-family: 'Cabin Sketch',cursive;
+	font-size: 2em;
+}
+
+main p:first-letter{
+	font-size: 2em;
+}
+
+figure {
+	display: inherit;
+	background: none;
+}
+
+.firstPortrait,.secondPortrait,.thirdPortrait{
+	margin: 1.5em 0 1em;
+}
+
+.firstPortrait img,.secondPortrait img{
+	width: 100%;
+}
+
+.firstPortrait figcaption,.secondPortrait figcaption,.thirdPortrait figcaption{
+	text-align: left;
+}
+
+figure.bigleft,figure.rightsquare,figure.leftcircle{
+	margin: 2em 0;
+}
+
+figure.bigright{
+	margin:-0.5em 0 2em;
+}
+
+figure.bigleft img,figure.bigright img,figure.rightsquare img,figure.leftcircle img{
+	width:100%;
+	border-radius: 10em;
+}
+
+figcaption{
+	text-align: center;
+	font-size: .8em;
+}
+
+footer{
+	clear: both;
+	color: white;
+	text-align: right;
+	font-size: 0.8em;
+	background-color: #202020;
+	padding: 0.25em 1em;
+	margin-bottom: 2em;
+	border-radius: 0.25em;
+}
+

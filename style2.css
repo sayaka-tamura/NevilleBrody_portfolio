@@ -1,0 +1,252 @@
+/* style sheet for DesignersOfTheWorld.com */
+
+/* HERE IS WHERE YOU DO ALL YOUR DESIGN WORK, AND YOU CAN START BY MODIFYING THE LINES BELOW */
+/*feel free to style any text level element (see on html5doctor.com) such as <i> <em> or <b> or use these approved classes for
+effect (pullQuote or highLight or borderEffect or ShadowDrop or activeSection or activePage) stick to these, because if you use
+a class name or id name that you made up, it will cause the site to malfunction on the other designer pages.  */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300|Quicksand:300,400,700|Josefin+Sans:300);
+
+*{
+	margin:0 auto;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-icab-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link {color:#FFF;} /*non-visit*/
+a:visited {color:#FFF;} /*visited*/
+a:hover {color:#ccc;} /*cursol on*/
+
+html,body {height: 100%;}
+
+body {
+	width: 1100px;
+	margin: auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	background: #222;
+	color: #FFF;
+	line-height: 1.7;
+	background-image:url('brody/images/RDW-back.jpg');
+}
+
+#logo {background-image: url('brody/images/titleLogo2.jpg');
+		height:200px;
+		background-repeat: no-repeat;
+		float: left;
+		}
+
+h1{
+	color: #000000;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	line-height: 1.15em;
+	float: left;
+	}
+
+h2{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+
+#logo h1{
+	position: relative;
+	top: 30px;
+	left: 100px;
+	color: #FFF;
+	background-color: rgba(0,0,0,0.5);
+}
+
+nav {
+	clear: both;
+	float: right;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul:after {
+  content: "";
+  display: block;
+  clear: both;
+ }
+
+
+nav ul li {
+	float: left;
+	padding:10px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1.5em;
+}
+
+form {
+	width: 214px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	float: right;
+	margin-top: 30px;
+}
+
+form input{
+	margin-left: 1em;
+}
+
+#navSecondary{
+	width: 250px;
+	height:100%;
+	padding: 10px;
+	clear: both;
+	float: left;
+	font-size: 1.1em;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 400;
+}
+
+#navSecondary ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+#designerName{
+	margin: 10px 0;
+	float: left;
+}
+
+#designerName h1{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	color:rgba(255,255,255,0.9);
+	background: #3e5d5e;
+	width: 840px;
+	padding-left: .2em;
+	word-spacing: .2em;
+}
+
+#thirdNav{
+	float: right;
+	margin-bottom: 1.5em;
+}
+
+#thirdNav ul{list-style-type: none;}
+#thirdNav ul li{
+	float: left;
+	padding: 5px;
+	font-weight: 400;
+	background-color: #444;
+	border-radius: 0.5em;
+	margin-right: 1em;
+}
+
+#thirdNav ul li:first-child{
+	margin-right: 1em;
+}
+
+#thirdNav a:link,#thirdNav a:visited,#thirdNav a:active{
+	text-decoration: none;
+	color: #fff;
+}
+
+#thirdNav li:hover{
+	background-color:#777;
+}
+
+main {
+	width: 75%;
+	margin-bottom: 8px;
+	float: left;
+	display: block;
+	-moz-columns: 250px 2;
+	-webkit-columns: 250px 2;
+	-o-columns: 250px 2;
+	-ms-columns: 250px 2;
+	-moz-column-gap: 0;
+	-webkit-column-gap: 0;
+	-o-column-gap: 0;
+	-ms-column-gap: 0;
+}
+
+main p{
+	font-weight: 500;
+	margin-bottom: 1em;
+	margin-right: 1em;
+}
+
+main p:first-letter{
+	font-size: 2em;
+	font-weight: 900;
+}
+
+figure.firstPortrait, figure.secondPortrait, figure.thirdPortrait{
+	width: 100%;
+	height: 250px;
+	margin-right: 50px;
+	margin-top: 25px;
+	border: 0 solid white;
+}
+
+figure.firstPortrait{
+/*	float: left;*/
+	margin-bottom: 25px;
+}
+
+figure.secondPortrait{
+/*	float: right;*/
+	margin-bottom: 25px;
+}
+
+ figure.thirdPortrait{
+/*	float: right;*/
+	margin-bottom: 25px;
+}
+
+.firstPortrait figcaption, .secondPortrait figcaption, .thirdPortrait figcaption{
+	color: #fff;
+	background: none;
+	font-weight: 900;
+}
+
+.bigleft, .bigright, .rightsquare, .leftcircle{
+	width:100%;
+	margin-bottom: 1em;
+}
+
+.bigleft img, .bigright img, .rightsquare img, .leftcircle img{
+	width:100%;
+	height: 500px;
+}
+
+figcaption{
+	text-align: left;
+	font-size: 1em;
+	width:100%;
+}
+
+figcaption a{
+	text-decoration: underline;
+}
+
+footer{
+	clear: both;
+	color: white;
+	text-align: right;
+	font-size: 0.8em;
+	font-weight: 400;
+	background-color: #484848;
+	padding: 0.25em 1em;
+	margin-bottom: 2em;
+	border-radius: 0.25em;
+}
